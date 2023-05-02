@@ -1,14 +1,11 @@
 import java.util.Scanner;
 
-import javax.sound.midi.SysexMessage;
-
 public class Main {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int op;
         boolean menu = true;
 
-        String nome = "null";
         String login =  "null";
         String senha = "null";
 
@@ -41,8 +38,6 @@ public class Main {
                     System.out.println("|-------------------------------|");
                     System.out.println();
                     System.out.println();
-                    System.out.print("Digite seu nome: ");
-                    nome = input.nextLine();
 
                     System.out.print("Digite seu login: ");
                     login = input.nextLine();
@@ -74,5 +69,7 @@ public class Main {
                 break;
             }
         }
+
+        input.close();
     }
 }
